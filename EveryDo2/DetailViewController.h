@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "EveryDo2+CoreDataModel.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <UITextFieldDelegate>
 
-@property (strong, nonatomic) Event *detailItem;
+@property (strong, nonatomic) Todo *detailItem;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 
 @end
